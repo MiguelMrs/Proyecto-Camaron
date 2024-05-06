@@ -6,6 +6,8 @@ body {
 	background-repeat: no-repeat;
 }
 
-.container {
-    background-color: aliceblue;
+.card-img-top {
+    width: 50%;
+    height: 100%;
+    object-fit: cover;
 }
