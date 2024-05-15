@@ -4,13 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="fotos/logo-peque.png" />
     <link rel="stylesheet" href="bootstrap.css">
     <title>Formulario de envío</title>
 </head>
 
 <body>
-    <!--Cabecera-->
     <nav class="navbar navbar-expand-md bg-dark sticky-top border-bottom justify-content-between " data-bs-theme="dark">
         <img src="fotos/logo.png" class="logo ms-4" alt="...">
         <div class="container">
@@ -31,6 +29,7 @@
                     <ul class="navbar-nav flex-grow-1 align-items-center">
                         </a></li>
                         <li class="nav-item"><a class="nav-link m-4" href="Proyecto.html">Inicio</a></li>
+                        <li class="nav-item"><a class="nav-link m-4" href="#">Productos</a></li>
                         <li class="nav-item"><a class="nav-link m-4" href="creadores.html">Creadores</a></li>
                         <li class="nav-item"><a class="nav-link m-4" href="preguntasFAQ.html">FAQ</a></li>
                         <li class="nav-item"><a class="nav-link m-4" href="#">Comentarios</a></li>
@@ -45,134 +44,83 @@
             <button class="btn btn-outline-success" type="submit">Buscar</button>
         </form>
     </nav>
-
-
-
     <div class="container mt-2">
-        <!--Inicio del Formulario-->
-        <h1 class="my-4">Formulario de envío</h1>
-        <hr class="my-2">
-        <h4>Datos de envio</h4>
-        <form class="needs-validation" novalidate>
+        <div>
+        </div>
+        <form>
+            <h1>Formulario de envío</h1>
             <div class="row">
-                <!--Nombre-->
-                <div class="form-group col-md-6">
-                    <label for="Nombre" class="form-label">Nombre:</label>
-                    <input type="text" class="form-control" id="Nombre" placeholder="Ingrese su nombre" required>
-                </div>
-                <!--Apellidos-->
-                <div class="form-group col-md-6">
-                    <label for="Apellido" class="form-label">Apellidos:</label>
-                    <input type="text" class="form-control" id="Apellidos" placeholder="Ingrese su apellido" required>
-                </div>
-                <!--Correo eléctronico-->
-                <div class="form-group col-md-6">
-                    <label for="email" class="form-label">Correo Electrónico:</label>
-                    <input type="email" class="form-control" id="email" placeholder="Ingrese su correo electrónico" required>
-                </div>
-                <!--Dirección-->
-                <div class="form-group col-md-12">
-                    <label for="direccion">Dirección:</label>
-                    <input type="text" class="form-control" id="direccion" name="direccion" required
-                        placeholder="Ingrese aquí su dirección">
-                    <div class="invalid-feedback">
-                        Se requiere su dirección de entrega
+                <form id="Formularioenvio" action="#" method="post">
+                    <div class="form-group col-md-6">
+                        <label for="Nombre" class="form-label">Nombre:</label>
+                        <input type="text" class="form-control" id="Nombre" placeholder="Ingrese su nombre">
                     </div>
-                </div>
-                <!--Ciudad-->
-                <div class="form-group col-md-6">
-                    <label for="Ciudad">Ciudad:</label>
-                    <input type="text" class="form-control" id="Ciudad" name="Ciudad" required
-                        placeholder="Ingrese aquí su ciudad">
-                </div>
-                <!--localidad-->
-                <div class="form-group col-md-6">
-                    <label for="Localidad">Localidad:</label>
-                    <input type="text" class="form-control" id="Localidad" name="Localidad" required
-                        placeholder="Ingrese aquí su localidad">
-                </div>
-                <!--Codigo postal-->
-                <div class="form-group col-md-6">
-                    <label for="codigoPostal">Código Postal:</label>
-                    <input type="text" class="form-control" id="codigoPostal" name="codigoPostal" pattern="[0-9]{5}"
-                        required placeholder="Ingrese aquí el codigo postal">
-                </div>
-                <!--Comunidad autónoma-->
-                <div class="form-group col-md-12">
-                    <label for="interes" class="form-label">Comunidad autónoma:</label>
-                    <select class="form-select" multiple aria-label="Interses" required>
-                        <option value="1">Andalucía</option>
-                        <option value="2">Canarias</option>
-                        <option value="3">Cantabria</option>
-                        <option value="4" disabled>Cataluña</option>
-                        <option value="5">Galícia</option>
-                        <option value="6">Islas Baleares</option>
-                        <option value="7">La Rioja</option>
-                        <option value="8">Navarra</option>
-                        <option value="9">País Vasco</option>
-                        <option value="10">Aragón</option>
-                        <option value="11">Castilla-La-Mancha</option>
-                        <option value="12">Castilla y León</option>
-                        <option value="13">Valencia</option>
-                        <option value="14">Extremadura</option>
-                        <option value="15">Madrid</option>
-                        <option value="16">Ceuta</option>
-                        <option value="17">Melilla</option>
-                        <option value="18">Murcia</option>
-                        <option value="19">Asturias</option>
-                    </select>
-                </div>
-                <!--Teléfono-->
-                <div class="form-group col-md-6">
-                    <label for="telefono">Teléfono:</label>
-                    <input type="tel" class="form-control" id="telefono" name="telefono" pattern="[0-9]{9}" required
-                        placeholder="Ingrese aquí su número de teléfono">
-                </div>
-                <!--Mensaje-->
-                <div class="form-group col-md-12">
-                    <label for="mensaje" class="form-label">Mensaje:</label>
-                    <textarea class="form-control" id="mensaje" rows="5"
-                        placeholder="Ingrese aquí algun comentario de envío"></textarea>
-                </div>
-            </div>
-            <!--Bloque 2-->
-            <div class="row">
-                <!--Separador-->
-                <hr class="my-4">
-                <!--Bloque de pago-->
-                <h4 class="mb-3">Pago</h4>
-                <div class="row">
-                    <div class="col-md-6">
-                        <label for="cc-name" class="form-label">Nombre del titular de la tarjeta</label>
-                        <input type="text" class="form-control" id="cc-name" placeholder="" required="">
-                        <small class="text-body-secondary">Nombre completo como se muestra en la tarjeta</small>
+                    <div class="form-group col-md-6">
+                        <label for="Nombre" class="form-label">Apellidos:</label>
+                        <input type="text" class="form-control" id="Nombre" placeholder="Ingrese su nombre">
                     </div>
-                    <div class="col-md-6">
-                        <label for="cc-number" class="form-label">Número de tarjeta de crédito</label>
-                        <input type="text" class="form-control" id="cc-number" required pattern="[0-9]{16}">
+                    <div class="form-group col-md-6">
+                        <label for="email" class="form-label">Correo Electrónico:</label>
+                        <input type="email" class="form-control" id="email" placeholder="Ingrese su correo electrónico">
                     </div>
-                    <div class="col-md-3">
-                        <label for="cc-expiration" class="form-label">Caducidad</label>
-                        <input type="text" class="form-control" id="cc-expiration" placeholder="MM\YY" required>
+                    <div class="form-group col-md-12 col-sm-6">
+                        <label for="direccion">Dirección:</label>
+                        <input type="text" class="form-control" id="direccion" name="direccion" required>
+                        <div class="invalid-feedback">Por favor ingresa tu dirección.</div>
+                      </div>
+                      <div class="form-row">
+                        <div class="form-group col-md-6">
+                          <label for="codigoPostal">Código Postal:</label>
+                          <input type="text" class="form-control" id="codigoPostal" name="codigoPostal" pattern="[0-9]{5}" required>
+                          <div class="invalid-feedback">Por favor ingresa un código postal válido (5 dígitos numéricos).</div>
+                        </div>
+                        <div class="form-group col-md-6">
+                          <label for="telefono">Teléfono:</label>
+                          <input type="tel" class="form-control" id="telefono" name="telefono" pattern="[0-9]{10}" required>
+                          <div class="invalid-feedback">Por favor ingresa un número de teléfono válido (10 dígitos numéricos).</div>
+                        </div>
+                      </div>
+                    
+                    <div class="form-group col-md-12">
+                        <label for="interes" class="form-label">Comunidad autónoma:</label>
+                        <select class="form-select" multiple aria-label="Interses">
+                            <option value="1">Andalucía</option>
+                            <option value="2">Canarias</option>
+                            <option value="3">Cantabria</option>
+                            <option value="4" disabled>Cataluña</option>
+                            <option value="5">Galícia</option>
+                            <option value="6">Islas Baleares</option>
+                            <option value="7">La Rioja</option>
+                            <option value="8">Navarra</option>
+                            <option value="9">País Vasco</option>
+                            <option value="10">Aragón</option>
+                            <option value="11">Castilla-La-Mancha</option>
+                            <option value="12">Castilla y León</option>
+                            <option value="13">Valencia</option>
+                            <option value="14">Extremadura</option>
+                            <option value="15">Madrid</option>
+                            <option value="16">Ceuta</option>
+                            <option value="17">Melilla</option>
+                            <option value="18">Murcia</option>
+                            <option value="19">Asturias</option>
+                        </select>
                     </div>
-                    <div class="col-md-3">
-                        <label for="cc-cvv" class="form-label">CVV</label>
-                        <input type="text" class="form-control" id="cc-cvv" required pattern="[0-9]{3}">
+                    <div class="form-group col-md-12">
+                        <label for="mensaje" class="form-label">Mensaje:</label>
+                        <textarea class="form-control" id="mensaje" rows="5"
+                            placeholder="Ingrese aquí algun comentario de envío"></textarea>
                     </div>
-                </div>
-                <div class="col-md-12 my-3">
-                    <div class="form-check">
-                        <input class="form-check-input" type="checkbox" id="terminos" required>
-                        <label class="form-check-label" for="terminos">
-                            Acepto los <a href="https://youtu.be/DpBQt3rwE1E" target="_blank">términos y
-                                condiciones.</a>
-                        </label>
+                    <div class="col-md-12 ">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="terminos">
+                            <label class="form-check-label" for="terminos1">
+                                Acepto los términos y condiciones.
+                            </label>
+                        </div>
                     </div>
-                </div>
             </div>
             <button type="submit" class="btn btn-primary">Enviar</button>
         </form>
-    </div>
     </div>
 
     <footer class="bg-light d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
@@ -208,26 +156,7 @@
             </ul>
         </div>
     </footer>
-    <script src="bootstrap.bundle.js">
-    </script>
-    <script>
-         (() => {
-            'use strict'
-
-            const forms = document.querySelectorAll('.needs-validation')
-
-            Array.from(forms).forEach(form => {
-                form.addEventListener('submit', event => {
-                    if (!form.checkValidity()) {
-                        event.preventDefault()
-                        event.stopPropagation()
-                    }
-
-                    form.classList.add('was-validated')
-                }, false)
-            })
-        })()
-    </script>
+    <script src="bootstrap.bundle.js"></script>
 </body>
 
 </html>
