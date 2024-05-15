@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap.css">
+    <link rel="script" href="bootstrap.bundle.js">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- header de la pagina inicio -->
+    <nav class="navbar navbar-expand-md bg-dark sticky-top border-bottom justify-content-between " data-bs-theme="dark">
+        <img src="fotos/logo.png" class="logo ms-4" alt="...">
+        <div class="container">
+            <a class="navbar-brand d-md-none" href="#">
+                <use xlink:href="#aperture"></use>
+                Aperture
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvas"
+                aria-controls="#offcanvas" aria-label="Alternar navegación">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="#offcanvas" aria-labelledby="#offcanvasLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="#offcanvasLabel">Aperture</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body justify-content-between">
+                    <ul class="navbar-nav flex-grow-1 align-items-center">
+                        </a></li>
+                        <li class="nav-item"><a class="nav-link m-4" href="Proyecto.html">Inicio</a></li>
+                        <li class="nav-item"><a class="nav-link m-4" href="#">Productos</a></li>
+                        <li class="nav-item"><a class="nav-link m-4" href="creadores.html">Creadores</a></li>
+                        <li class="nav-item"><a class="nav-link m-4" href="#">FAQ</a></li>
+                        <li class="nav-item"><a class="nav-link m-4" href="#">Comentarios</a></li>
+                        </a></li>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <form class="d-flex m-4" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Buscar</button>
+        </form>
+    </nav>
+    <div class="container-fluid mt-2">
+        <div>
+        </div>
+        <!-- header de la pagina final-->
+
+
+        <nav id="navbar-example2" class="navbar bg-body-tertiary px-3 mb-3">
+            <div class="col-2"><a class="navbar-brand" href="#">BARRA DE NAVEGACIÓN FAQ</a></div>
+            <form class="d-flex m-4 col-4" role="search">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Buscar</button>
+            </form>
+            <ul class="nav nav-pills col-12 justify-content-end">
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button"
+                        aria-expanded="false">Pago del pedido</a>
+                    <ul class="dropdown-menu justify-content-center">
+                        <li><a class="dropdown-item" href="#collapse1">Pedido minimo</a></li>
+                        <li><a class="dropdown-item" href="#collapse2">Envio del pedido</a></li>
+                        <li><a class="dropdown-item" href="#collapse12">Iva del pedido</a></li>
+                        <li><a class="dropdown-item" href="#dollapseOne">Pago con targeta</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button"
+                        aria-expanded="false">Calidad y estado del Producto</a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#scrollspyHeading3">llegada del producto</a></li>
+                        <li><a class="dropdown-item" href="#scrollspyHeading4">condiciones del pescado</a></li>
+                        <li><a class="dropdown-item" href="#scrollspyHeading5">Cocción del pescado</a></li>
+                        <li><a class="dropdown-item" href="#scrollspyHeading5">procedencias del pescado</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button"
+                        aria-expanded="false">Tiempo del pedido</a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#scrollspyHeading3">Envios por la tarde</a></li>
+                        <li><a class="dropdown-item" href="#scrollspyHeading4">Dias de entrega</a></li>
+                        <li><a class="dropdown-item" href="#scrollspyHeading5">Ejecucción correcta del pedido</a></li>
+                        <li><a class="dropdown-item" href="#scrollspyHeading5">Fecha acordada</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button"
+                        aria-expanded="false">Lugar del pedido</a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#scrollspyHeading3">localidades</a></li>
+                        <li><a class="dropdown-item" href="#scrollspyHeading4">islas y extranjero</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+
+
+
+        <div class="accordion" id="accordionExample">
+
+            <div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapse1" aria-expanded="true" aria-controls="collapse1">
+                            ¿Hay pedido minimo?
+                        </button>
+                    </h2>
+                    <div id="collapse1" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            It is shown by default, until the collapse plugin adds the appropriate classes that we use
+                            to style each element. These classes control the overall appearance, as well as the showing
+                            and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our
+                            default variables. It's also worth noting that just about any HTML can go within the
+                            <code>.accordion-body</code>, though the transition does limit overflow.
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapse2" aria-expanded="true" aria-controls="collapse2">
+                            ¿Cuanto me costara el envio de mi pedido?
+                        </button>
+                    </h2>
+                    <div id="collapse2" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            It is shown by default, until the collapse plugin adds the appropriate classes that we use
+                            to style each element. These classes control the overall appearance, as well as the showing
+                            and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our
+                            default variables. It's also worth noting that just about any HTML can go within the
+                            <code>.accordion-body</code>, though the transition does limit overflow.
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapse3" aria-expanded="true" aria-controls="collapse3">
+                        ¿como me aseguráis que el producto llegará en perfecto estado?
+                    </button>
+                </h2>
+                <div id="collapse3" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        It is shown by default, until the collapse plugin adds the appropriate classes that we use to
+                        style each element. These classes control the overall appearance, as well as the showing and
+                        hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default
+                        variables. It's also worth noting that just about any HTML can go within the
+                        <code>.accordion-body</code>, though the transition does limit overflow.
+                    </div>
+                </div>
+            </div>
+        
+
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse4"
+                    aria-expanded="true" aria-controls="collapse4">
+                    ¿todo el marisco y pescado es fresco?
+                </button>
+            </h2>
+            <div id="collapse4" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    It is shown by default, until the collapse plugin adds the appropriate classes that we use to style
+                    each element. These classes control the overall appearance, as well as the showing and hiding via
+                    CSS transitions. You can modify any of this with custom CSS or overriding our default variables.
+                    It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>,
+                    though the transition does limit overflow.
+                </div>
+            </div>
+        </div>
+    
+
+    <div class="accordion-item">
+        <h2 class="accordion-header">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse5"
+                aria-expanded="true" aria-controls="collapse5">
+                ¿puedo recibir mi pedido por la tarde?
+            </button>
+        </h2>
+        <div id="collapse5" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+                It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each
+                element. These classes control the overall appearance, as well as the showing and hiding via CSS
+                transitions. You can modify any of this with custom CSS or overriding our default variables. It's also
+                worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the
+                transition does limit overflow.
+            </div>
+        </div>
+    </div>
+    
+
+    <div class="accordion-item">
+        <h2 class="accordion-header">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse6"
+                aria-expanded="true" aria-controls="collapse6">
+                ¿en qué localidades se realizan entregas?
+            </button>
+        </h2>
+        <div id="collapse6" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+                It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each
+                element. These classes control the overall appearance, as well as the showing and hiding via CSS
+                transitions. You can modify any of this with custom CSS or overriding our default variables. It's also
+                worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the
+                transition does limit overflow.
+            </div>
+        </div>
+    </div>
+    
+
+    <div class="accordion-item">
+        <h2 class="accordion-header">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse7"
+                aria-expanded="true" aria-controls="collapse7">
+                ¿que días de la semana puedo recibir mi pedido?
+            </button>
+        </h2>
+        <div id="collapse7" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+                It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each
+                element. These classes control the overall appearance, as well as the showing and hiding via CSS
+                transitions. You can modify any of this with custom CSS or overriding our default variables. It's also
+                worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the
+                transition does limit overflow.
+            </div>
+        </div>
+    </div>
+    
+
+    <div class="accordion-item">
+        <h2 class="accordion-header">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse8"
+                aria-expanded="true" aria-controls="collapse8">
+                ¿puedo recibir mi pedido en baleares?
+            </button>
+        </h2>
+        <div id="collapse8" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+                It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each
+                element. These classes control the overall appearance, as well as the showing and hiding via CSS
+                transitions. You can modify any of this with custom CSS or overriding our default variables. It's also
+                worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the
+                transition does limit overflow.
+            </div>
+        </div>
+    </div>
+    
+
+    <div class="accordion-item">
+        <h2 class="accordion-header">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse9"
+                aria-expanded="true" aria-controls="collapse9">
+                ¿puedo recibir el marisco cocido?
+            </button>
+        </h2>
+        <div id="collapse9" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+                It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each
+                element. These classes control the overall appearance, as well as the showing and hiding via CSS
+                transitions. You can modify any of this with custom CSS or overriding our default variables. It's also
+                worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the
+                transition does limit overflow.
+            </div>
+        </div>
+    </div>
+    
+
+    <div class="accordion-item">
+        <h2 class="accordion-header">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse10"
+                aria-expanded="true" aria-controls="collapse10">
+                ¿todo el marisco procede de las lonjas gallegas?
+            </button>
+        </h2>
+        <div id="collapse10" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+                It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each
+                element. These classes control the overall appearance, as well as the showing and hiding via CSS
+                transitions. You can modify any of this with custom CSS or overriding our default variables. It's also
+                worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the
+                transition does limit overflow.
+            </div>
+        </div>
+    </div>
+
+
+    <div class="accordion-item">
+        <h2 class="accordion-header">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse11"
+                aria-expanded="true" aria-controls="collapse11">
+                ¿cómo puedo saber si mi pedido se ha ejecutado correctamente?
+            </button>
+        </h2>
+        <div id="collapse11" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+                It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each
+                element. These classes control the overall appearance, as well as the showing and hiding via CSS
+                transitions. You can modify any of this with custom CSS or overriding our default variables. It's also
+                worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the
+                transition does limit overflow.
+            </div>
+        </div>
+    </div>
+
+
+    <div class="accordion-item">
+        <h2 class="accordion-header">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse12"
+                aria-expanded="true" aria-controls="collapse12">
+                ¿se incluye el iva en el precio?
+            </button>
+        </h2>
+        <div id="collapse12" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+                It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each
+                element. These classes control the overall appearance, as well as the showing and hiding via CSS
+                transitions. You can modify any of this with custom CSS or overriding our default variables. It's also
+                worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the
+                transition does limit overflow.
+            </div>
+        </div>
+    </div>
+
+
+    <div class="accordion-item">
+        <h2 class="accordion-header">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse13"
+                aria-expanded="true" aria-controls="collapse13">
+                ¿el pedido me llegará en la fecha acordada?
+            </button>
+        </h2>
+        <div id="collapse13" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+                It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each
+                element. These classes control the overall appearance, as well as the showing and hiding via CSS
+                transitions. You can modify any of this with custom CSS or overriding our default variables. It's also
+                worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the
+                transition does limit overflow.
+            </div>
+        </div>
+    </div>
+
+
+    <div class="accordion-item">
+        <h2 class="accordion-header">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+                aria-expanded="true" aria-controls="collapseOne">
+                ¿puedo pagar con tarjeta?
+            </button>
+        </h2>
+        <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+                It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each
+                element. These classes control the overall appearance, as well as the showing and hiding via CSS
+                transitions. You can modify any of this with custom CSS or overriding our default variables. It's also
+                worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the
+                transition does limit overflow.
+            </div>
+        </div>
+    </div>
+    
+
+    </div>
+
+
+
+
+    <script src=bootstrap.bundle.js></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+
+</html>
